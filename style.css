@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url(fonts/metropolis-black.otf);
+}
+
+@font-face {
+    font-family: 'monofonto';
+    src: url(fonts/monofonto.otf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fa3838;
+    font-family: 'Metropolis', sans-serif;
+    font-size: 20px;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+    font-family: 'Metropolis', sans-serif;
+    text-align: center;
+    color: #ececec;
+}
+
+.image {
+    width: 50%;
+    height: 50%;
+    margin: 20px 0;
+    animation: zoomIn 2s ease-in-out; /* Apply the zoom-in animation */
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.1); /* Start from a small value */
+    }
+    to {
+        transform: scale(1);
+    }
+}
